@@ -1,0 +1,13 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false
+    }
+  },
+  "env": {
+    "targets": "IE 9, not dead",
+    "mode": "entry",
+    "coreJs": "3.22"
+  }
+}
