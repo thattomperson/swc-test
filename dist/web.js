@@ -27,7 +27,7 @@ function _async_to_generator(fn) {
         });
     };
 }
-var __generator = this && this.__generator || function(thisArg, body) {
+var __generator = (this && this.__generator) || function(thisArg, body) {
     var f, y, t, g, _ = {
         label: 0,
         sent: function() {
@@ -87,7 +87,7 @@ var __generator = this && this.__generator || function(thisArg, body) {
                         _ = 0;
                         continue;
                     }
-                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) {
                         _.label = op[1];
                         break;
                     }
@@ -122,7 +122,10 @@ var __generator = this && this.__generator || function(thisArg, body) {
         };
     }
 };
-console.log("hello");
+function log(message) {
+    console.log(message);
+}
+log("hello");
 function sleep(ms) {
     return new Promise(function(resolve) {
         setTimeout(resolve, ms);
@@ -136,14 +139,14 @@ function _main() {
         return __generator(this, function(_state) {
             switch(_state.label){
                 case 0:
-                    console.log("start");
+                    log("start");
                     return [
                         4,
                         sleep(1000)
                     ];
                 case 1:
                     _state.sent();
-                    console.log("end");
+                    log("end");
                     return [
                         2
                     ];
@@ -152,4 +155,4 @@ function _main() {
     });
     return _main.apply(this, arguments);
 }
-
+main();

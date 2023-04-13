@@ -1,7 +1,7 @@
 {
   "name": "swc-test",
   "scripts": {
-    "build": "npx swc index.ts -o output.js"
+    "build": "spack"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.62",
